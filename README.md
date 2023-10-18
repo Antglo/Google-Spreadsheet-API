@@ -7,7 +7,7 @@ Python code to create and append data to a spreadsheet.
 ![image](https://github.com/Antglo/Google-Spreadsheet-API/assets/100139359/58479ffa-ff6d-48e3-b15a-d4c52907bf8d)
 -----------------------------------------------------------------------------------------------------------------------
 
-To get started,
+## To get started
 <p>please read through the link below 
 https://developers.google.com/sheets/api/quickstart/python
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
