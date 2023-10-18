@@ -94,6 +94,21 @@ class warranty_parts_request_form:
 
         #Find the sheet by name and open the first sheet (front Page)
         sheet = client.open('Warranty Parts Request GUI').sheet1
+        
+        #With page open find duplicates and raise message if there is a duplicate
+        #Be carful column values are (0-based) index start from 0...
+        asset_tags = sheet.col_values(3)
+        serial_numbers = sheet.col_values(4)
+        
+        user_input_asset =  self.entry_asset.get()
+        user_input_serial = self.entry_serial.get()
+        
+        #Create the if logic for duplications
+        if user_input_asset in asset_tags:
+            messagebox.showwarning("Duplicate Entry", "The ASSET_TAG you entered already exists!")
+            return #use to exit the function
+        if user_input_serial in serial_numbers:
+            messagebox.showwarning("Duplicate Entry", "The SERIAL_NUMBER you entered already exists!")
 
         #append data from GUI fields
         data = [self.entry_date.get(), self.entry_portal.get(), self.entry_model.get(), self.entry_asset.get(), self.entry_serial.get(), self.entry_parts.get()]
