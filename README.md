@@ -10,7 +10,7 @@ Using ttk for a themed tkinter
 To get started,
 please read through the link below 
 https://developers.google.com/sheets/api/quickstart/python
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This will help you understand how everything is communicating.
 -----------------------------------------------------------------------------------------------------------------------
 
